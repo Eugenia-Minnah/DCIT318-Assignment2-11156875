@@ -32,6 +32,12 @@ class Program
                 Console.WriteLine("Cat:");
                 c.MakeSound();
                 break;
+            case "2":
+                Shape circle = new Circle(5);
+                Shape rectangle = new Rectangle(4, 6);
+                Console.WriteLine($"Circle Area: {circle.GetArea():F2}");
+                Console.WriteLine($"Rectangle Area: {rectangle.GetArea():F2}");
+                break;
 
         }
     }
