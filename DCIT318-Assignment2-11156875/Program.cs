@@ -38,6 +38,16 @@ class Program
                 Console.WriteLine($"Circle Area: {circle.GetArea():F2}");
                 Console.WriteLine($"Rectangle Area: {rectangle.GetArea():F2}");
                 break;
+            case "3":
+                IMovable car = new Car();
+                IMovable bicycle = new Bicycle();
+                car.Move();
+                bicycle.Move();
+                break;
+
+            default:
+                Console.WriteLine("Invalid choice");
+                break;
 
         }
     }
